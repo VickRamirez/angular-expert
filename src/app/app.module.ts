@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador/contador.component';
 import { HeroeComponent } from './Heroes/Heroe/heroe.component';
-import { ListadoComponent } from './heroes/listado/listado.component';
+import { ListadoComponent } from './Heroes/listado/listado.component';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListadoComponent } from './heroes/listado/listado.component';
     ListadoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
